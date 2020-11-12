@@ -12,10 +12,22 @@ class App extends Component {
     this.handleChange = this.handleChange.bind(this);
   }
 
+  // obfusticator() {
+  //   if (e.target.value = 'a') {
+  //     return 'ă';
+  //   }
+  // }
   handleChange(e) {
+   
+     function obfusticator() {
+       if (e.target.value = "a") {
+         return "ă";
+       }
+     }
+    
     console.log(e.target)
     this.setState({
-      obfustication: e.target.value,
+      obfustication: obfusticator(e.target.value),
     });
   }
   

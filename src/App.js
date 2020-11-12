@@ -1,5 +1,6 @@
 import './App.css';
 import React, { Component } from 'react';
+import './styles/style.css'
 
 class App extends Component {
   constructor(props) {
@@ -17,24 +18,36 @@ class App extends Component {
   //     return 'ă';
   //   }
   // }
+   obfusticator(letter) {
+    if (letter === "a") {
+      return "ă";
+    }
+     if (letter === "b") {
+      return "ƀ";
+    }
+    else {
+      return letter;
+    }
+  }
+
   handleChange(e) {
    
-     function obfusticator() {
-       if (e.target.value = "a") {
-         return "ă";
-       }
-     }
+    //  function obfusticator() {
+    //    if (e.target.value = "a") {
+    //      return "ă";
+    //    }
+    //  }
     
-    console.log(e.target)
+    console.log(e)
     this.setState({
-      obfustication: obfusticator(e.target.value),
+      obfustication: e.target.value,
     });
   }
   
 
   render() {
     return (
-      <div>
+      <div className="panel">
         Your Message :
         <input
           type="text"
@@ -42,10 +55,13 @@ class App extends Component {
           onChange={this.handleChange}
         />
         <br />
-       Your Obfusticated Message : {this.state.obfustication}
+        Your Unobfusticated Message : {this.state.obfustication}
+        <br />
+        Your Obfusticated Message : {this.obfusticator(this.state.obfustication)}
       </div>
     );
   }
 }
-
 export default App;
+        
+

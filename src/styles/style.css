@@ -1,0 +1,9 @@
+body {
+    background-color: #000000;
+    color: #000000;
+}
+
+.panel {
+    background-color: #daa566;
+    max-width: 400px;
+}

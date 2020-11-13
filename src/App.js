@@ -18,17 +18,21 @@ class App extends Component {
   //     return 'ă';
   //   }
   // }
-   obfusticator(letter) {
-    if (letter === "a") {
-      return "ă";
-    }
-     if (letter === "b") {
-      return "ƀ";
-    }
-    else {
-      return letter;
-    }
-  }
+  obfusticator(letter) {
+    
+   return letter.replace("a", "C")
+    // if (letter === "a") {
+    //   return "ă";
+    // }
+    //  if (letter === "b") {
+    //   return "ƀ";
+    // }
+    // else {
+    //   return letter;
+    // }
+   }
+  
+   
 
   handleChange(e) {
    
@@ -48,16 +52,16 @@ class App extends Component {
   render() {
     return (
       <div className="panel">
-        Your Message :
+        YOUR MESSAGE:
         <input
           type="text"
           value={this.state.obfustication}
           onChange={this.handleChange}
         />
         <br />
-        Your Unobfusticated Message : {this.state.obfustication}
+        YOUR UNOBFUSTICATED MESSAGE : {this.state.obfustication}
         <br />
-        Your Obfusticated Message : {this.obfusticator(this.state.obfustication)}
+        YOUR OBFUSTICATED MESSAGE : {this.obfusticator(this.state.obfustication)}
       </div>
     );
   }

@@ -1,8 +1,8 @@
-let phrase = "gimme sum of dat red stuff ova dere"
 
-export default function obfusticator(burrito) {
+
+export default function obfusticator(phrase) {
   //burrito will be the phrase inserted
-  let splitter = Array.from(burrito);
+  let splitter = Array.from(phrase);
   let oPhrase = [];
   let a = ["Ā", "ā", "Ă", "ă", "Ą", "ą", "à", "á", "â", "ã", "ä", "å", "À", "Á", "Â", "Ã", "Ä", "Å", "ƛ", "Ǎ", "ǎ", "Ǟ", "ǟ", "Ǡ", "Ǻ", "ǻ", "Ȁ", "ȁ", "Ȃ", "ȃ", "ȧ", "Ȧ", "Ⱥ", "Ʌ", "ɑ", "˄", "Ά", "Α", "Δ", "Λ", "α", "ά", "Ά", "λ", "д", "Ѧ", "ѧ", "Ӑ", "ӑ", "Ӓ", "ӓ", "ճ", "Д", "ᴧ", "ᶺ", "Ḁ", "ḁ", "Ạ", "ạ", "Ả", "ả", "Ấ", "ấ", "Ầ", "ầ", "Ẩ", "ẩ", "Ẫ", "ẫ", "Ậ", "ậ", "Ắ", "ắ", "Ằ", "ằ", "Ẳ", "ẳ", "Ẵ", "ẵ", "Ặ", "ặ", "ἀ", "ἁ", "ἂ", "ἃ", "ἄ", "ἅ", "ἆ", "ἇ", "Ἀ", "Ἁ", "Ἂ", "Ἃ", "Ἄ", "Ἅ", "Ἆ", "Ἇ", "ᾀ", "ᾁ", "ᾂ", "ᾃ", "ᾄ", "ᾅ", "ᾆ", "ᾇ", "ᾈ", "ᾉ", "ᾊ", "ᾋ", "ᾌ", "ᾍ", "ᾎ", "ᾏ", "ᾰ", "ᾱ", "ᾲ", "ᾳ", "ᾴ", "ᾶ", "ᾷ", "Ᾰ", "Ᾱ", "Ὰ", "Ά", "ᾼ", "₳", "ⱥ", "ꜻ", "ꜽ", "Ɐ", "ꬰ"];
   let b = ["ß", "Þ", "6", "ƀ", "Ɓ", "Ƃ", "ƃ", "Ƅ", "ƅ", "Ȣ", "ȣ", "Ƀ", "ɓ", "ɮ", "ʙ", "β", "ϐ", "Б", "Ϸ", "Ъ", "Ь", "б", "ь", "Ѣ", "ѣ", "Ҍ", "ҍ", "Ҕ", "ҕ", "ط", "ظ", "ᴃ", "ᴯ", "ᵆ", "ᵇ", "ᵬ", "ᵦ", "ᶀ", "ḃ", "Ḅ", "ḅ", "Ḇ", "ḇ", "ẞ", "₿", "Ꞛ", "ꞛ", "Ꞗ", "ꞗ", "Ꞵ", "ꞵ"];
@@ -31,40 +31,106 @@ export default function obfusticator(burrito) {
   let y = ["ý", "ÿ", "¥", "µ", "Ŷ", "ŷ", "Ÿ", "Ɣ", "Ƴ", "ƴ", "Ȳ", "ȳ", "Ɏ", "ɏ", "ˠ", "Υ", "γ", "Ϋ", "Ψ", "ψ", "ϒ", "ϓ", "ϔ", "ϥ", "У", "у", "ў", "Ѱ", "Ү", "Ұ", "Ҷ", "ҷ", "Ӌ", "ӌ", "ץ", "۲", "ᵧ", "Ẏ", "ẏ", "Ỳ", "ỳ", "Ỵ", "ỵ", "Ỷ", "Ỹ", "ỹ", "Ὑ", "Ὓ", "Ὕ", "Ὗ", "Ῠ", "Ῡ", "Ὺ", "Ύ", "Ɥ"];
   let z = ["Ź", "ź", "Ż", "ż", "Ž", "ž", "ƺ", "ʑ", "ʓ", "ζ", "ᵶ", "ᶎ", "ᶚ", "ᶻ", "ᶼ", "ᶽ", "ᶾ", "Ẑ", "ẑ", "Ẓ", "ẓ", "Ẕ", "ẕ", "Ⱬ", "ⱬ", "Ɀ"];
 
-  //converts burrito to Array
-  console.log(splitter[1]);
-  for (let i = 0; i < splitter.length; i++) {
-    let element = splitter[i];
-    console.log(element);
+  //converts phrase to Array
+  for (let index = 0; index < splitter.length; index++) {
+   
+      let element = splitter[index];
 
     if (element === "a") {
-      // element.replaceAll("a", "A")
-      oPhrase.push(element.replaceAll("a", "A"));
-      // console.log(oPhrase)
-    } else if (element === "m") {
-      oPhrase.push(element.replaceAll("m", "M"));
-    } else {
-      oPhrase.push(element);
+      oPhrase.push(element.replaceAll("a", a[Math.floor(Math.random() * a.length)]));
     }
-  }
-  console.log(oPhrase.toString());
-
-  // return oPhrase.toString
-
-  // burrito.replaceAll("a", selector());
-
-  //  let a = ["À", "Ā", "Ă", "Ą", "ą", "à", "Â", "ã", "â", "å", "ă"];
-  //  let randomizer = Math.floor(Math.random() * 10);
-  //  return a[randomizer]
+    else if (element === "b") {
+       oPhrase.push(element.replaceAll("b", b[Math.floor(Math.random() * b.length)]));
+    }
+    else if (element === "c") {
+       oPhrase.push(element.replaceAll("c", c[Math.floor(Math.random() * c.length)]));
+    }
+    else if (element === "d") {
+       oPhrase.push(element.replaceAll("d", d[Math.floor(Math.random() * d.length)]));
+    }
+    else if (element === "e") {
+       oPhrase.push(element.replaceAll("e", e[Math.floor(Math.random() * e.length)]));
+    }
+    else if (element === "f") {
+       oPhrase.push(element.replaceAll("f", f[Math.floor(Math.random() * f.length)]));
+    }
+    else if (element === "g") {
+       oPhrase.push(element.replaceAll("g", g[Math.floor(Math.random() * g.length)]));
+    }
+    else if (element === "h") {
+       oPhrase.push(element.replaceAll("h", h[Math.floor(Math.random() * h.length)]));
+    }
+    else if (element === "i") {
+       oPhrase.push(element.replaceAll("i", i[Math.floor(Math.random() * i.length)]));
+    }
+    else if (element === "j") {
+       oPhrase.push(element.replaceAll("j", j[Math.floor(Math.random() * j.length)]));
+    }
+    else if (element === "k") {
+       oPhrase.push(element.replaceAll("k", k[Math.floor(Math.random() * k.length)]));
+    }
+    else if (element === "l") {
+       oPhrase.push(element.replaceAll("l", l[Math.floor(Math.random() * l.length)]));
+    }
+    else if (element === "m") {
+       oPhrase.push(element.replaceAll("m", m[Math.floor(Math.random() * m.length)]));
+    }
+    else if (element === "n") {
+       oPhrase.push(element.replaceAll("n", n[Math.floor(Math.random() * n.length)]));
+    }
+    else if (element === "o") {
+       oPhrase.push(element.replaceAll("o", o[Math.floor(Math.random() * o.length)]));
+    }
+    else if (element === "p") {
+       oPhrase.push(element.replaceAll("p", p[Math.floor(Math.random() * p.length)]));
+    }
+    else if (element === "q") {
+       oPhrase.push(element.replaceAll("q", q[Math.floor(Math.random() * q.length)]));
+    }
+    else if (element === "r") {
+       oPhrase.push(element.replaceAll("r", r[Math.floor(Math.random() * r.length)]));
+    }
+    else if (element === "s") {
+       oPhrase.push(element.replaceAll("s", s[Math.floor(Math.random() * s.length)]));
+    }
+    else if (element === "t") {
+       oPhrase.push(element.replaceAll("t", t[Math.floor(Math.random() * t.length)]));
+    }
+    else if (element === "u") {
+       oPhrase.push(element.replaceAll("u", u[Math.floor(Math.random() * u.length)]));
+    }
+    else if (element === "v") {
+       oPhrase.push(element.replaceAll("v", v[Math.floor(Math.random() * v.length)]));
+    }
+    else if (element === "w") {
+       oPhrase.push(element.replaceAll("w", w[Math.floor(Math.random() * w.length)]));
+    }
+    else if (element === "x") {
+       oPhrase.push(element.replaceAll("x", x[Math.floor(Math.random() * x.length)]));
+    }
+    else if (element === "y") {
+       oPhrase.push(element.replaceAll("y", y[Math.floor(Math.random() * y.length)]));
+    }
+    else if (element === "z") {
+       oPhrase.push(element.replaceAll("z", z[Math.floor(Math.random() * z.length)]));
+    }
+    else {
+      oPhrase.push(element);
+      }
+    }
+    return oPhrase
 }
-// function selector ()
-
-//  export default function selector() {
-//    let a = ["À", "Ā", "Ă", "Ą", "ą", "à", "Â", "ã", "â", "å", "ă"];
-          
-//           let randomizer = Math.floor(Math.random() * 10);
-//    return a[randomizer]
-   
-// }
         
+    
+    
+    
+    
+    
+    
+        
+
+
+        
+
+
 

@@ -5,7 +5,8 @@ import obfusticator from './obfusticator'
 // import selector from './test'
 
 
-let phrase = "gimme sum of dat red stuff ova dere"
+let phrase =
+  "abcdefghijklmnopqrstuvwxyz";
 
 
 export default function App() {
@@ -16,7 +17,7 @@ export default function App() {
       YOUR MESSAGE:
       <input/>
       <br/>
-      YOUR UNOBFUSTICATED MESSAGE : 
+      YOUR UNOBFUSTICATED MESSAGE : {}
       <br/>
       YOUR OBFUSTICATED MESSAGE : {obfusticator(phrase)}
     </div>

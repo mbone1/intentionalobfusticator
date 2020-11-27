@@ -11,14 +11,15 @@ let phrase =
 
 export default function App() {
 
-  const [value, setValue] = useState(0)
-  
+  const [value, setValue] = useState("")
+  const [input, changeInput] =useState(0)
+
   return (
     <div className="panel">
       <AutosizeInput
         autoFocus
         value={value}
-        onChange={() => setValue(value)}
+        onChange={(event) => setValue(event.target.value)}
       />
       YOUR MESSAGE:
       <input>{/* <span class="termReverse">&nbsp;</span> */}</input>

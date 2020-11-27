@@ -1,8 +1,8 @@
 import './App.css';
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import './styles/style.css'
 import obfusticator from './obfusticator'
-// import selector from './test'
+import AutosizeInput from "react-input-autosize";
 
 
 let phrase =
@@ -11,17 +11,25 @@ let phrase =
 
 export default function App() {
 
+  const [value, setValue] = useState(0)
   
   return (
     <div className="panel">
+      <AutosizeInput
+        autoFocus
+        value={value}
+        onChange={() => setValue(value)}
+      />
       YOUR MESSAGE:
-      <input/>
-      <br/>
-      YOUR UNOBFUSTICATED MESSAGE : {}
-      <br/>
-      YOUR OBFUSTICATED MESSAGE : {obfusticator(phrase)}
+      <input>{/* <span class="termReverse">&nbsp;</span> */}</input>
+      <br />{" "}
+      <tr>
+        <td nowrap height="15" class="term">
+          <span class="termReverse"> &nbsp;</span>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </td>
+      </tr>
     </div>
-        
   );
 }
 

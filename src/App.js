@@ -12,24 +12,25 @@ let phrase =
 export default function App() {
 
   const [value, setValue] = useState("")
-  const [input, changeInput] =useState(0)
 
   return (
     <div className="panel">
+      <span>Enter text here :</span>
       <AutosizeInput
+        class="black"
         autoFocus
         value={value}
         onChange={(event) => setValue(event.target.value)}
       />
-      YOUR MESSAGE:
-      <input>{/* <span class="termReverse">&nbsp;</span> */}</input>
-      <br />{" "}
-      <tr>
+      <span class="termReverse blinking">&nbsp;</span>
+      
+      {/* <tr>
         <td nowrap height="15" class="term">
-          <span class="termReverse"> &nbsp;</span>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span class="termReverse">&nbsp;</span>
+          <span class="termReverse">&nbsp;</span>
+         
         </td>
-      </tr>
+      </tr> */}
     </div>
   );
 }

@@ -15,10 +15,11 @@ export default function App() {
 
   return (
     <div className="panel">
-      <span>Enter text here :</span>
+      <span></span>
       <AutosizeInput
         class="black"
         autoFocus
+        placeholder="how long is now?"
         value={value}
         onChange={(event) => setValue(event.target.value)}
       />

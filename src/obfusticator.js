@@ -118,7 +118,7 @@ export default function obfusticator(phrase) {
       oPhrase.push(element);
       }
     }
-    return oPhrase
+    return oPhrase.toString().replaceAll(",", "")
 }
         
     

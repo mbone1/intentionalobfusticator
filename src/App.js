@@ -12,26 +12,25 @@ let phrase =
 export default function App() {
 
   const [value, setValue] = useState("")
-
+  let placeholder = "how long is now?"
   return (
     <div className="panel">
       <span></span>
       <AutosizeInput
         class="black"
         autoFocus
-        placeholder="how long is now?"
+        placeholder={placeholder}
         value={value}
         onChange={(event) => setValue(event.target.value)}
       />
       <span class="termReverse blinking">&nbsp;</span>
+      <br>
+      </br>
+      <AutosizeInput 
+        placeholder={obfusticator(placeholder)}
+        class="black"
+      value={obfusticator(value)}></AutosizeInput><span class="termReverse blinking">&nbsp;</span>
       
-      {/* <tr>
-        <td nowrap height="15" class="term">
-          <span class="termReverse">&nbsp;</span>
-          <span class="termReverse">&nbsp;</span>
-         
-        </td>
-      </tr> */}
     </div>
   );
 }

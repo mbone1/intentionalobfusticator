@@ -25,10 +25,6 @@
     }
     
     .face-panel {
-        /* float: left; */
-        /* top: ;
-        left: ; */
-        bottom: 10;
         background-color: #000000;
         color: #daa566;
         border: 1px solid #daa566;
@@ -42,9 +38,71 @@
     
     .face {
         -webkit-animation: fadein 2s;
+        animation: fadein 2s;
+    }
+    
+    .comm {
+        -webkit-animation: fadein 6s;
+        animation: fadein 6s;
+    }
+    
+    .comm-panel {
+        background-color: #000000;
+        color: #daa566;
+        border: 1px solid #daa566;
+        border-radius: 0%;
+        margin-top: -100px;
+        margin-left: 270px;
+        /* margin: px; */
+        /* margin-top: 100px; */
+        position: absolute;
+        height: 120px;
+        width: 120px;
+        text-align: center;
+        font-size: 50px;
+    }
+    
+    .input-panel {
+        background-color: #000000;
+        color: #daa566;
+        border: 1px solid #daa566;
+        border-radius: 0%;
+        margin-top: -525px;
+        margin-left: 425px;
+        width: 500px;
+    }
+    
+    .button-panel {
+        background-color: #000000;
+        color: #daa566;
+        border: 1px solid #daa566;
+        border-radius: 0%;
+        width: 90px;
+        margin-left: 700px;
+        max-height: 5px;
+    }
+    
+    .output-panel {
+        background-color: #000000;
+        color: #daa566;
+        border: 1px solid #daa566;
+        border-radius: 0%;
+        margin-top: 150px;
+        margin-left: 425px;
+        width: 500px;
+        height: 245px;
     }
     
     @keyframes fadein {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    @keyframes fadein2 {
         from {
             opacity: 0;
         }

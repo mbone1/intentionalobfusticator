@@ -4,6 +4,10 @@ body {
     color: #000000;
 }
 
+.box {
+    padding: 0rem;
+}
+
 .black {
     background-color: #111111;
     color: #daa566;

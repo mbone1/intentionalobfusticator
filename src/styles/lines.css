@@ -1,0 +1,109 @@
+.lineA {
+    background-color: aquamarine;
+    width: 1px;
+    height: 219px;
+    margin-top: -49px;
+    margin-left: 490px;
+    position: absolute;
+    animation: A 5s infinite;
+}
+
+.lineB {
+    background-color: aquamarine;
+    width: 1px;
+    height: 219px;
+    margin-top: -49px;
+    margin-left: 600px;
+    position: absolute;
+    animation: B 5s infinite;
+}
+
+.lineC {
+    background-color: aquamarine;
+    width: 1px;
+    height: 219px;
+    margin-top: -49px;
+    margin-left: 750px;
+    position: absolute;
+    animation: C 3s infinite;
+}
+
+.lineD {
+    background-color: aquamarine;
+    width: 1px;
+    height: 219px;
+    margin-top: -49px;
+    margin-left: 780px;
+    position: absolute;
+    animation: D 15s infinite;
+}
+
+.lineE {
+    background-color: aquamarine;
+    width: 1px;
+    height: 219px;
+    margin-top: -49px;
+    margin-left: 850px;
+    position: absolute;
+    animation: E 2s infinite;
+}
+
+@keyframes A {
+    0% {
+        margin-left: 490px
+    }
+    50% {
+        margin-left: 700px
+    }
+    100% {
+        margin-left: 490px
+    }
+}
+
+@keyframes B {
+    0% {
+        margin-left: 600px;
+    }
+    50% {
+        margin-left: 900px;
+    }
+    100% {
+        margin-left: 600px;
+    }
+}
+
+@keyframes C {
+    0% {
+        margin-left: 750px;
+    }
+    50% {
+        margin-left: 475px;
+    }
+    100% {
+        margin-left: 750px;
+    }
+}
+
+@keyframes D {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 40px;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes E {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 40px;
+    }
+    100% {
+        left: 0;
+    }
+}

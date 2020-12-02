@@ -1,48 +1,48 @@
 .lineA {
-    background-color: aquamarine;
-    width: 1px;
+    background-color: #52dff1;
+    width: 2px;
     height: 219px;
-    margin-top: -49px;
+    margin-top: -457px;
     margin-left: 490px;
     position: absolute;
     animation: A 5s infinite;
 }
 
 .lineB {
-    background-color: aquamarine;
-    width: 1px;
+    background-color: #52dff1;
+    width: 2px;
     height: 219px;
-    margin-top: -49px;
+    margin-top: -457px;
     margin-left: 600px;
     position: absolute;
     animation: B 5s infinite;
 }
 
 .lineC {
-    background-color: aquamarine;
-    width: 1px;
+    background-color: #52dff1;
+    width: 2px;
     height: 219px;
-    margin-top: -49px;
+    margin-top: -457px;
     margin-left: 750px;
     position: absolute;
     animation: C 3s infinite;
 }
 
 .lineD {
-    background-color: aquamarine;
-    width: 1px;
+    background-color: #52dff1;
+    width: 2px;
     height: 219px;
-    margin-top: -49px;
+    margin-top: -457px;
     margin-left: 780px;
     position: absolute;
     animation: D 15s infinite;
 }
 
 .lineE {
-    background-color: aquamarine;
-    width: 1px;
+    background-color: #52dff1;
+    width: 2px;
     height: 219px;
-    margin-top: -49px;
+    margin-top: -457px;
     margin-left: 850px;
     position: absolute;
     animation: E 2s infinite;

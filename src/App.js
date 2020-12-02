@@ -33,7 +33,16 @@ export default function App() {
             <div class="lineC"></div>
             <div class="lineD"></div>
         <div class="lineE"></div>
-        <div class="lineA"></div>
+        <div class="lineF"></div>
+        <div class="lineG"></div>
+        <div class="lineH"></div>
+        <div class="lineI"></div>
+        <div class="lineJ"></div>
+        <div class="lineK"></div>
+        <div class="lineL"></div>
+        <div class="lineM"></div>
+        <div class="lineN"></div>
+      
 
 
             <div class="box output-panel"></div>

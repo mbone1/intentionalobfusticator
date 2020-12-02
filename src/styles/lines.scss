@@ -4,22 +4,23 @@
     @return $randomNum;
 }
 
+$Alpha: randomNum(430, 920)+px;
 .lineA {
-    background-color: #52dff1;
+    background-color: #8ca10f;
     width: random(3)+ px;
     height: 219px;
     margin-top: -457px;
-    margin-left: 490px;
+    margin-left: $Alpha;
     position: absolute;
     animation: A random(20)+s infinite;
 }
 
 .lineB {
-    background-color: #52dff1;
+    background-color: #e93232;
     width: random(3)+ px;
     height: 219px;
     margin-top: -457px;
-    margin-left: 600px;
+    margin-left: $Alpha;
     position: absolute;
     animation: B random(20)+s infinite;
 }
@@ -29,7 +30,7 @@
     width: random(3)+ px;
     height: 219px;
     margin-top: -457px;
-    margin-left: 750px;
+    margin-left: $Alpha;
     position: absolute;
     animation: C random(20)+s infinite;
 }
@@ -39,7 +40,7 @@
     width: random(3)+ px;
     height: 219px;
     margin-top: -457px;
-    margin-left: 780px;
+    margin-left: $Alpha;
     position: absolute;
     animation: D random(20)+s infinite;
 }
@@ -49,9 +50,99 @@
     width: random(3)+ px;
     height: 219px;
     margin-top: -457px;
-    margin-left: randomNum(430, 920) + px;
+    margin-left: $Alpha;
     position: absolute;
     animation: E random(20)+s infinite;
+}
+
+.lineF {
+    background-color: #52dff1;
+    width: random(3)+ px;
+    height: 219px;
+    margin-top: -457px;
+    margin-left: $Alpha;
+    position: absolute;
+    animation: F random(20)+s infinite;
+}
+
+.lineG {
+    background-color: #52dff1;
+    width: random(3)+ px;
+    height: 219px;
+    margin-top: -457px;
+    margin-left: $Alpha;
+    position: absolute;
+    animation: G random(20)+s infinite;
+}
+
+.lineH {
+    background-color: #52dff1;
+    width: random(3)+ px;
+    height: 219px;
+    margin-top: -457px;
+    margin-left: $Alpha;
+    position: absolute;
+    animation: H random(20)+s infinite;
+}
+
+.lineI {
+    background-color: #52dff1;
+    width: random(3)+ px;
+    height: 219px;
+    margin-top: -457px;
+    margin-left: $Alpha;
+    position: absolute;
+    animation: I random(20)+s infinite;
+}
+
+.lineJ {
+    background-color: #52dff1;
+    width: random(3)+ px;
+    height: 219px;
+    margin-top: -457px;
+    margin-left: $Alpha;
+    position: absolute;
+    animation: J random(20)+s infinite;
+}
+
+.lineK {
+    background-color: #52dff1;
+    width: random(3)+ px;
+    height: 219px;
+    margin-top: -457px;
+    margin-left: $Alpha;
+    position: absolute;
+    animation: K random(20)+s infinite;
+}
+
+.lineL {
+    background-color: #52dff1;
+    width: random(3)+ px;
+    height: 219px;
+    margin-top: -457px;
+    margin-left: $Alpha;
+    position: absolute;
+    animation: L random(20)+s infinite;
+}
+
+.lineM {
+    background-color: #52dff1;
+    width: random(3)+ px;
+    height: 219px;
+    margin-top: -457px;
+    margin-left: $Alpha;
+    position: absolute;
+    animation: M random(20)+s infinite;
+}
+
+.lineN {
+    background-color: #52dff1;
+    width: random(3)+ px;
+    height: 219px;
+    margin-top: -457px;
+    margin-left: $Alpha;
+    position: absolute;
+    animation: N random(20)+s infinite;
 }
 
 //high end 920
@@ -59,60 +150,168 @@
 // random(1410) - 490
 @keyframes A {
     0% {
-        margin-left: 490px
+        margin-left: $Alpha
     }
     50% {
-        margin-left: 700px
+        margin-left: randomNum(430, 920) + px
     }
     100% {
-        margin-left: 490px
+        margin-left: $Alpha
     }
 }
 
 @keyframes B {
     0% {
-        margin-left: 600px;
+        margin-left: $Alpha
     }
     50% {
-        margin-left: 900px;
+        margin-left: randomNum(430, 920) + px
     }
     100% {
-        margin-left: 600px;
+        margin-left: $Alpha
     }
 }
 
 @keyframes C {
     0% {
-        margin-left: 750px;
+        margin-left: $Alpha
     }
     50% {
-        margin-left: 475px;
+        margin-left: randomNum(430, 920) + px
     }
     100% {
-        margin-left: 750px;
+        margin-left: $Alpha
     }
 }
 
 @keyframes D {
     0% {
-        margin-left: 780px;
+        margin-left: $Alpha
     }
     50% {
-        margin-left: 450px;
+        margin-left: randomNum(430, 920) + px
     }
     100% {
-        margin-left: 780px;
+        margin-left: $Alpha
     }
 }
 
 @keyframes E {
     0% {
-        margin-left: randomNum(430, 920) + px
+        margin-left: $Alpha
     }
     50% {
         margin-left: randomNum(430, 920) + px
     }
     100% {
-        margin-left: randomNum(430, 920) + px;
+        margin-left: $Alpha
+    }
+}
+
+@keyframes F {
+    0% {
+        margin-left: $Alpha
+    }
+    50% {
+        margin-left: randomNum(430, 920) + px
+    }
+    100% {
+        margin-left: $Alpha
+    }
+}
+
+@keyframes G {
+    0% {
+        margin-left: $Alpha
+    }
+    50% {
+        margin-left: randomNum(430, 920) + px
+    }
+    100% {
+        margin-left: $Alpha
+    }
+}
+
+@keyframes H {
+    0% {
+        margin-left: $Alpha
+    }
+    50% {
+        margin-left: randomNum(430, 920) + px
+    }
+    100% {
+        margin-left: $Alpha
+    }
+}
+
+@keyframes I {
+    0% {
+        margin-left: $Alpha
+    }
+    50% {
+        margin-left: randomNum(430, 920) + px
+    }
+    100% {
+        margin-left: $Alpha
+    }
+}
+
+@keyframes J {
+    0% {
+        margin-left: $Alpha
+    }
+    50% {
+        margin-left: randomNum(430, 920) + px
+    }
+    100% {
+        margin-left: $Alpha
+    }
+}
+
+@keyframes K {
+    0% {
+        margin-left: $Alpha
+    }
+    50% {
+        margin-left: randomNum(430, 920) + px
+    }
+    100% {
+        margin-left: $Alpha
+    }
+}
+
+@keyframes L {
+    0% {
+        margin-left: $Alpha
+    }
+    50% {
+        margin-left: randomNum(430, 920) + px
+    }
+    100% {
+        margin-left: $Alpha
+    }
+}
+
+@keyframes M {
+    0% {
+        margin-left: $Alpha
+    }
+    50% {
+        margin-left: randomNum(430, 920) + px
+    }
+    100% {
+        margin-left: $Alpha
+    }
+}
+
+@keyframes N {
+    0% {
+        margin-left: $Alpha
+    }
+    50% {
+        margin-left: randomNum(430, 920) + px
+    }
+    100% {
+        margin-left: $Alpha
     }
 }

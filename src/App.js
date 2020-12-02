@@ -1,8 +1,14 @@
 import './App.css';
 import React, { useState } from 'react';
-import './styles/style.css'
 import obfusticator from './obfusticator'
 import AutosizeInput from "react-input-autosize";
+import './styles/scroller.css'
+import './styles/lines.css'
+import './styles/layout.css'
+import face from './media/face.png'
+import LeftPanel from './panels/leftpanel'
+import Rows from './panels/rows'
+// import './styles/style.css'
 
 
 let phrase =
@@ -14,24 +20,56 @@ export default function App() {
   const [value, setValue] = useState("")
   let placeholder = "how long is now?"
   return (
-    <div className="panel">
-      <span></span>
-      <AutosizeInput
-        class="black"
-        autoFocus
-        placeholder={placeholder}
-        value={value}
-        onChange={(event) => setValue(event.target.value)}
-      />
-      <span class="termReverse blinking">&nbsp;</span>
-      <br>
-      </br>
-      <AutosizeInput 
-        placeholder={obfusticator(placeholder)}
-        class="black"
-      value={obfusticator(value)}></AutosizeInput><span class="termReverse blinking">&nbsp;</span>
-      
+    <div class="container">
+       <Rows/>
+
+        <div class="column is-three-fifths is-offset-one-fifth">
+           <LeftPanel/>
+            
+            <div class="box face-panel">
+                <img src={face} class="face"/>
+            </div>
+            <div class="box comm-panel">
+                <div class="comm">?</div>
+            </div>
+            <div class="box input-panel"></div>
+            <div class="lineA"></div>
+            <div class="lineB"></div>
+            <div class="lineC"></div>
+            <div class="lineD"></div>
+            <div class="lineE"></div>
+
+
+            <div class="box output-panel"></div>
+            <div class="button-panel">&nbsp;&nbsp;&nbsp;SUBMIT</div>
+        </div>
+
+
+
     </div>
+    
+    /* // <div className="panel">
+    //   <span></span>
+    //   <AutosizeInput
+    //     class="black"
+    //     autoFocus
+    //     placeholder={placeholder}
+    //     value={value}
+    //     onChange={(event) => setValue(event.target.value)}
+    //   />
+    //   <span class="termReverse blinking">&nbsp;</span>
+    //   <br>
+    //   </br>
+    //   <AutosizeInput 
+    //     placeholder={obfusticator(placeholder)}
+    //     class="black"
+    //   value={obfusticator(value)}></AutosizeInput><span class="termReverse blinking">&nbsp;</span>
+      
+    // </div> */
+
+
+    
+    
   );
 }
 

@@ -1,53 +1,62 @@
+@function randomNum($min, $max) {
+    $rand: random();
+    $randomNum: $min + floor($rand * (($max - $min) + 1));
+    @return $randomNum;
+}
+
 .lineA {
     background-color: #52dff1;
-    width: 2px;
+    width: random(3)+ px;
     height: 219px;
     margin-top: -457px;
     margin-left: 490px;
     position: absolute;
-    animation: A 5s infinite;
+    animation: A random(20)+s infinite;
 }
 
 .lineB {
     background-color: #52dff1;
-    width: 2px;
+    width: random(3)+ px;
     height: 219px;
     margin-top: -457px;
     margin-left: 600px;
     position: absolute;
-    animation: B 5s infinite;
+    animation: B random(20)+s infinite;
 }
 
 .lineC {
     background-color: #52dff1;
-    width: 2px;
+    width: random(3)+ px;
     height: 219px;
     margin-top: -457px;
     margin-left: 750px;
     position: absolute;
-    animation: C 3s infinite;
+    animation: C random(20)+s infinite;
 }
 
 .lineD {
     background-color: #52dff1;
-    width: 2px;
+    width: random(3)+ px;
     height: 219px;
     margin-top: -457px;
     margin-left: 780px;
     position: absolute;
-    animation: D 15s infinite;
+    animation: D random(20)+s infinite;
 }
 
 .lineE {
     background-color: #52dff1;
-    width: 2px;
+    width: random(3)+ px;
     height: 219px;
     margin-top: -457px;
-    margin-left: 850px;
+    margin-left: randomNum(430, 920) + px;
     position: absolute;
-    animation: E 2s infinite;
+    animation: E random(20)+s infinite;
 }
 
+//high end 920
+//low end 430 
+// random(1410) - 490
 @keyframes A {
     0% {
         margin-left: 490px
@@ -98,12 +107,12 @@
 
 @keyframes E {
     0% {
-        left: 0;
+        margin-left: randomNum(430, 920) + px
     }
     50% {
-        left: 40px;
+        margin-left: randomNum(430, 920) + px
     }
     100% {
-        left: 0;
+        margin-left: randomNum(430, 920) + px;
     }
 }

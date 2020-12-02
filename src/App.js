@@ -3,16 +3,13 @@ import React, { useState } from 'react';
 import obfusticator from './obfusticator'
 import AutosizeInput from "react-input-autosize";
 import './styles/scroller.css'
-import './styles/lines.css'
+import './styles/lines.scss'
 import './styles/layout.css'
 import face from './media/face.png'
 import LeftPanel from './panels/leftpanel'
 import Rows from './panels/rows'
-// import './styles/style.css'
+import Face from './panels/face'
 
-
-let phrase =
-  "abcdefghijklmnopqrstuvwxyz";
 
 
 export default function App() {
@@ -22,22 +19,21 @@ export default function App() {
   return (
     <div class="container">
        <Rows/>
-
         <div class="column is-three-fifths is-offset-one-fifth">
            <LeftPanel/>
-            
-            <div class="box face-panel">
-                <img src={face} class="face"/>
-            </div>
+            <Face/>
             <div class="box comm-panel">
                 <div class="comm">?</div>
             </div>
+
+            
             <div class="box input-panel"></div>
             <div class="lineA"></div>
             <div class="lineB"></div>
             <div class="lineC"></div>
             <div class="lineD"></div>
-            <div class="lineE"></div>
+        <div class="lineE"></div>
+        <div class="lineA"></div>
 
 
             <div class="box output-panel"></div>

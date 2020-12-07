@@ -9,6 +9,7 @@ import face from './media/face.png'
 import LeftPanel from './panels/leftpanel'
 import Rows from './panels/rows'
 import Face from './panels/face'
+import LeftPanelTest from './panels/leftpaneltest'
 
 
 
@@ -18,20 +19,19 @@ export default function App() {
   let placeholder = "how long is now?"
   return (
     <div class="container">
-       <Rows/>
-        <div class="column is-three-fifths is-offset-one-fifth">
-           <LeftPanel/>
-            <Face/>
-            <div class="box comm-panel">
-                <div class="comm">?</div>
-            </div>
+      <Rows />
+      <div class="column is-three-fifths is-offset-one-fifth">
+        <LeftPanel />
+        <Face />
+        <div class="box comm-panel">
+          <div class="comm">?</div>
+        </div>
 
-            
-            <div class="box input-panel"></div>
-            <div class="lineA"></div>
-            <div class="lineB"></div>
-            <div class="lineC"></div>
-            <div class="lineD"></div>
+        <div class="box input-panel"></div>
+        <div class="lineA"></div>
+        <div class="lineB"></div>
+        <div class="lineC"></div>
+        <div class="lineD"></div>
         <div class="lineE"></div>
         <div class="lineF"></div>
         <div class="lineG"></div>
@@ -42,17 +42,12 @@ export default function App() {
         <div class="lineL"></div>
         <div class="lineM"></div>
         <div class="lineN"></div>
-      
 
-
-            <div class="box output-panel"></div>
-            <div class="button-panel">&nbsp;&nbsp;&nbsp;SUBMIT</div>
-        </div>
-
-
-
+        <div class="box output-panel"></div>
+        <div class="button-panel">&nbsp;&nbsp;&nbsp;&nbsp;SUBMIT</div>
+      </div>
     </div>
-    
+
     /* // <div className="panel">
     //   <span></span>
     //   <AutosizeInput
@@ -71,10 +66,6 @@ export default function App() {
     //   value={obfusticator(value)}></AutosizeInput><span class="termReverse blinking">&nbsp;</span>
       
     // </div> */
-
-
-    
-    
   );
 }
 

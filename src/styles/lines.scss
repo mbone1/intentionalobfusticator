@@ -6,23 +6,23 @@
 
 $Alpha: randomNum(430, 920)+px;
 .lineA {
-    background-color: #8ca10f;
+    background-color: #61f809;
     width: random(3)+ px;
-    height: 219px;
+    height: 230px;
     margin-top: -457px;
-    margin-left: $Alpha;
+    margin-left: 431px;
     position: absolute;
-    animation: A random(20)+s infinite;
+    animation: A 9s infinite;
 }
 
 .lineB {
     background-color: #e93232;
     width: random(3)+ px;
-    height: 219px;
+    height: 221px;
     margin-top: -457px;
-    margin-left: $Alpha;
+    margin-left: 919px;
     position: absolute;
-    animation: B random(20)+s infinite;
+    animation: B 10+s infinite;
 }
 
 .lineC {
@@ -32,7 +32,7 @@ $Alpha: randomNum(430, 920)+px;
     margin-top: -457px;
     margin-left: $Alpha;
     position: absolute;
-    animation: C random(20)+s infinite;
+    animation: C random(3)+s;
 }
 
 .lineD {
@@ -42,7 +42,7 @@ $Alpha: randomNum(430, 920)+px;
     margin-top: -457px;
     margin-left: $Alpha;
     position: absolute;
-    animation: D random(20)+s infinite;
+    animation: D random(3)+s;
 }
 
 .lineE {
@@ -52,7 +52,7 @@ $Alpha: randomNum(430, 920)+px;
     margin-top: -457px;
     margin-left: $Alpha;
     position: absolute;
-    animation: E random(20)+s infinite;
+    animation: E random(3)+s;
 }
 
 .lineF {
@@ -62,7 +62,7 @@ $Alpha: randomNum(430, 920)+px;
     margin-top: -457px;
     margin-left: $Alpha;
     position: absolute;
-    animation: F random(20)+s infinite;
+    animation: F random(3)+s;
 }
 
 .lineG {
@@ -72,7 +72,7 @@ $Alpha: randomNum(430, 920)+px;
     margin-top: -457px;
     margin-left: $Alpha;
     position: absolute;
-    animation: G random(20)+s infinite;
+    animation: G random(3)+s;
 }
 
 .lineH {
@@ -82,7 +82,7 @@ $Alpha: randomNum(430, 920)+px;
     margin-top: -457px;
     margin-left: $Alpha;
     position: absolute;
-    animation: H random(20)+s infinite;
+    animation: H random(3)+s;
 }
 
 .lineI {
@@ -92,7 +92,7 @@ $Alpha: randomNum(430, 920)+px;
     margin-top: -457px;
     margin-left: $Alpha;
     position: absolute;
-    animation: I random(20)+s infinite;
+    animation: I random(3)+s;
 }
 
 .lineJ {
@@ -102,7 +102,7 @@ $Alpha: randomNum(430, 920)+px;
     margin-top: -457px;
     margin-left: $Alpha;
     position: absolute;
-    animation: J random(20)+s infinite;
+    animation: J random(3)+s;
 }
 
 .lineK {
@@ -112,7 +112,7 @@ $Alpha: randomNum(430, 920)+px;
     margin-top: -457px;
     margin-left: $Alpha;
     position: absolute;
-    animation: K random(20)+s infinite;
+    animation: K random(3)+s;
 }
 
 .lineL {
@@ -122,7 +122,7 @@ $Alpha: randomNum(430, 920)+px;
     margin-top: -457px;
     margin-left: $Alpha;
     position: absolute;
-    animation: L random(20)+s infinite;
+    animation: L random(3)+s;
 }
 
 .lineM {
@@ -132,7 +132,7 @@ $Alpha: randomNum(430, 920)+px;
     margin-top: -457px;
     margin-left: $Alpha;
     position: absolute;
-    animation: M random(20)+s infinite;
+    animation: M random(3)+s;
 }
 
 .lineN {
@@ -142,7 +142,7 @@ $Alpha: randomNum(430, 920)+px;
     margin-top: -457px;
     margin-left: $Alpha;
     position: absolute;
-    animation: N random(20)+s infinite;
+    animation: N random(3)+s;
 }
 
 //high end 920
@@ -150,25 +150,25 @@ $Alpha: randomNum(430, 920)+px;
 // random(1410) - 490
 @keyframes A {
     0% {
-        margin-left: $Alpha
+        margin-left: 431px
     }
     50% {
-        margin-left: randomNum(430, 920) + px
+        margin-left: 919px
     }
     100% {
-        margin-left: $Alpha
+        margin-left: 431px
     }
 }
 
 @keyframes B {
     0% {
-        margin-left: $Alpha
+        margin-left: 919px
     }
     50% {
-        margin-left: randomNum(430, 920) + px
+        margin-left: 431px
     }
     100% {
-        margin-left: $Alpha
+        margin-left: 919px
     }
 }
 
